@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Task12</title>
+    <style>
+        .box {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-color: #0fcbe3;
+        }
+        .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .remember-me {
+
+            margin-bottom: 10px;
+        }
+        
+        .botbox {
+            height: 30px;
+            border: 1px solid #ccc;
+            background-color: #e3dcdcb3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .cancel-button {
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .forgot-password {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #n {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic"><img src="https://xsgames.co/randomusers/assets/images/favicon.png" alt="Profile Picture"></div>
+        <p id="n">Username</p>
+        <input type="text" class="form-input" placeholder="Enter Username">
+        <p id="n">Password</p>
+        <input type="password" class="form-input" placeholder="Enter Password">
+        <button class="login-button">Login</button>
+        <label class="remember-me">
+            <input type="checkbox"> Remember me
+        </label>
+        <div class="botbox">
+            <button class="cancel-button">Cancel</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>
